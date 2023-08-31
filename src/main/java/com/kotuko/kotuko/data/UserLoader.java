@@ -9,6 +9,8 @@ import org.springframework.boot.ApplicationRunner;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 
+import java.time.LocalDate;
+
 @RequiredArgsConstructor
 @Component
 public class UserLoader implements ApplicationRunner {
@@ -23,6 +25,7 @@ public class UserLoader implements ApplicationRunner {
             .lastName("bhandari")
             .role(Role.ADMIN)
             .username("pujan")
+            .dateOfBirth(LocalDate.of(1996, 03, 10))
             .password(passwordEncoder.encode("pujan"))
             .build());
     }

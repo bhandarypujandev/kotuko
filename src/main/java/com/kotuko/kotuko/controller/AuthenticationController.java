@@ -20,7 +20,8 @@ public class AuthenticationController {
 
     @PostMapping("/login")
     public ResponseEntity<LoginRes> login(@Valid @RequestBody LoginReq loginReq){
-        System.out.println();
         return ResponseEntity.status(HttpStatus.OK).body(authenticationService.login(loginReq));
     }
+
+
 }

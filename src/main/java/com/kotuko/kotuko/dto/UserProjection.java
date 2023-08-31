@@ -1,7 +1,7 @@
 package com.kotuko.kotuko.dto;
 
 public interface UserProjection {
-    Integer getId();
+    int getId();
     String getUsername();
     String getFirstName();
     String getLastName();
